@@ -77,7 +77,7 @@ class Tic_tac_toe:
 			os.system("cls")
 			return(user_final_request)
 #if __name__=="__main__":
-print("\nDesigned and developed by { Chaitanya Krishna VB }\n")
+#print("\nDesigned and developed by { Chaitanya Krishna VB }\n")
 print("Welcome to T-i-c T-a-c T-o-e \n")
 print("This is a multi player game\n")
 user_choice=int(input("Enter 1-Play 2-Quit : "))
