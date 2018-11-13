@@ -1,5 +1,12 @@
+from __future__ import print_function
+name='ttt'
 import random,os
 class Tic_tac_toe:
+	def clear_screen(self):
+		try:
+			os.system('cls')
+		except:
+			os.system('clear')
 	def __init__(self,user_1,user_2):
 		self.user_1=user_1
 		self.user_2=user_2
@@ -41,7 +48,8 @@ class Tic_tac_toe:
 				print(f"{self.user_select} please choose a number to place : {self.user_symbol}\n")
 				self.number=int(input("Enter the number : "))
 				self.numbers_data_base.remove(self.number)	
-			os.system("cls")
+			#os.system("cls")
+			self.clear_screen()
 			print("-------------------")
 			for first in range(0,3):#Real Brain of Tic_tac_toe
 				for final in range(0,3):
@@ -62,19 +70,22 @@ class Tic_tac_toe:
 							print(f"|  {e1}  |  {e2}  |  {e3}  |")
 							print("-------------------")
 						if self.winner_declared==True:
-							os.system('cls')
+							#os.system('cls')
+							self.clear_screen()
 							print("-------------------")#printing Tic_tac_toe matrix after winning 
 							for e1,e2,e3 in self.new_matrix:
 								print(f"|  {e1}  |  {e2}  |  {e3}  |")
 								print("-------------------")
 							print(f"\nWinner : {self.user_select} with the symbol : {self.user_symbol}\n")
 							user_final_request=input("Press Y to play again any other key to quit : ").upper()
-							os.system("cls")
+							#os.system("cls")
+							self.clear_screen()
 							return(user_final_request)
 		if self.winner_declared==False:
 			print("\nWow close moves but it's a draw :(\n")
 			user_final_request=input("Press Y to play again any other key to quit : ").upper()
-			os.system("cls")
+			#os.system("cls")
+			self.clear_screen()
 			return(user_final_request)
 #if __name__=="__main__":
 #print("\nDesigned and developed by { Chaitanya Krishna VB }\n")
@@ -85,7 +96,11 @@ while True:
 	if user_choice==1:
 		user_1=input("\nEnter Name for user - 1 : ")
 		user_2=input("\nEnter Name for user - 2 : ")
-		os.system("cls")
+		#os.system("cls")
+		try:
+			os.system('cls')
+		except:
+			os.system('clear')
 		fun=Tic_tac_toe(user_1,user_2)
 		fun.pic_user()
 		user_final_request=fun.draw_board()
