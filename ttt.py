@@ -1,4 +1,3 @@
-from __future__ import print_function
 name='ttt'
 import random,os
 class Tic_tac_toe:
