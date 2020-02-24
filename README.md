@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# Tic Tac Toe
 Simple Multi Player TIC TAC TOE 
 
 Tic-tac-toe (also known as noughts and crosses or Xs and Os) 
