@@ -1,4 +1,4 @@
-# Tic Tac Toe [![Downloads](https://pepy.tech/badge/pyttt)](https://pepy.tech/project/pyttt)
+# Tic Tac Toe [![Downloads](https://pepy.tech/badge/pyttt)](https://pepy.tech/project/pyttt) ![visitors](https://visitor-badge.glitch.me/badge?page_id=CKVB.ttt.id)
 Simple Multi Player TIC TAC TOE 
 
 Tic-tac-toe (also known as noughts and crosses or Xs and Os) 
